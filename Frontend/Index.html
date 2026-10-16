@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Web</title>
+    <link rel="stylesheet" href="../bootstrap-5.3.8-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <nav class="navbar bg-white shadow-sm sticky-top py-2">
+        <div class="container-fluid px-3 px-lg-5">
+
+            <!-- LEFT: Logo + Location dropdown -->
+            <div class="d-flex align-items-center gap-3">
+
+                <a class="navbar-brand m-0" href="#">
+                    <img src="../Assets/Nav_Image_transparent.png" alt="Food Web Logo" height="55">
+                </a>
+
+                <div class="dropdown">
+                    <a class="location-toggle dropdown-toggle text-decoration-none" href="#" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        <span class="location-name">Other</span>
+                        <span class="location-address d-none d-sm-inline"></span>
+                    </a>
+                    <ul class="dropdown-menu shadow border-0 mt-3">
+                        <li>
+                            <h6 class="dropdown-header">Select location</h6>
+                        </li>
+                        <li><a class="dropdown-item" href="#">Home – paradeep</a></li>
+                        <li><a class="dropdown-item" href="#">Work – Vasavi pg</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <a class="dropdown-item brand-text" href="#">+ Add new address</a>
+                    </ul>
+                </div>
+            </div>
+            <form class="d-flex flex-grow-1 mx-2 mx-md-4 search-box" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                <button class="btn btn-search d-none d-sm-block" type="submit">Search</button>
+            </form>
+
+            <!-- RIGHT (desktop): links always visible -->
+            <ul class="navbar-nav flex-row gap-4 d-none d-md-flex align-items-center">
+                <li class="nav-item"><a class="nav-link nav-hover" href="#">Offers</a></li>
+                <li class="nav-item"><a class="nav-link nav-hover" href="#">Help</a></li>
+                <li class="nav-item"><a class="nav-link nav-hover" href="#">Sign In</a></li>
+                <li class="nav-item"><a class="nav-link nav-hover" href="#">Cart</a></li>
+            </ul>
+
+            <!-- RIGHT (mobile): same links inside one dropdown -->
+            <div class="dropdown d-md-none">
+                <button class="btn btn-outline-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Menu
+                </button>
+                <ul class="dropdown-menu dropdown-menu-end shadow border-0">
+                    <li><a class="dropdown-item" href="#">Offers</a></li>
+                    <li><a class="dropdown-item" href="#">Help</a></li>
+                    <li><a class="dropdown-item" href="#">Sign In</a></li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Cart</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+    <script src="../bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,106 @@
+:root {
+    --brand: #FEB40F;
+    --brand-dark: #E09A00;
+    --brand-light: #FFF6DD;
+    --ink: #282827;
+}
+
+.navbar-brand img {
+    height: 55px;
+    width: auto;
+}
+
+/* Location dropdown */
+.location-toggle {
+    color: var(--ink);
+    font-size: 14px;
+}
+
+.location-name {
+    font-weight: 700;
+    border-bottom: 2px solid var(--brand);
+    padding-bottom: 2px;
+    margin-right: 8px;
+}
+
+.location-address {
+    color: #6b6b6b;
+    max-width: 220px;
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    vertical-align: bottom;
+}
+
+.location-toggle:hover .location-name {
+    color: var(--brand-dark);
+}
+
+/* Nav links */
+.nav-hover {
+    color: var(--ink);
+    font-weight: 500;
+}
+
+.nav-hover:hover {
+    color: var(--brand-dark);
+}
+
+.brand-text {
+    color: var(--brand-dark);
+    font-weight: 600;
+}
+
+/* Dropdown items */
+.dropdown-item:hover {
+    background-color: var(--brand-light);
+}
+
+.dropdown-item:active {
+    background-color: var(--brand);
+    color: var(--ink);
+}
+
+/* Mobile menu button */
+.btn-outline-secondary {
+    --bs-btn-color: var(--ink);
+    --bs-btn-border-color: var(--brand);
+    --bs-btn-hover-bg: var(--brand);
+    --bs-btn-hover-border-color: var(--brand);
+    --bs-btn-hover-color: var(--ink);
+    --bs-btn-active-bg: var(--brand);
+    --bs-btn-active-border-color: var(--brand);
+    --bs-btn-active-color: var(--ink);
+}
+
+/* Let the search box shrink instead of wrapping */
+.search-box {
+    min-width: 0;
+    max-width: 500px;
+}
+
+.search-box input {
+    min-width: 0;
+}
+
+/* Search button in brand color */
+.btn-search {
+    background-color: var(--brand);
+    border-color: var(--brand);
+    color: var(--ink);
+    font-weight: 500;
+}
+
+.btn-search:hover {
+    background-color: var(--brand-dark);
+    border-color: var(--brand-dark);
+    color: var(--ink);
+}
+
+/* Smaller logo on phones so everything fits in one row */
+@media (max-width: 575.98px) {
+    .navbar-brand img {
+        height: 38px;
+    }
+}
